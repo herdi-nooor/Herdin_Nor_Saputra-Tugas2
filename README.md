@@ -2,6 +2,7 @@
 tugas fixbug BDI
 
 . bug_variable-score<br />
+prioritas = Low \
 :interrobang:-bug<br />
   The name '_score' does not exist in the current context in GameManager.cs line 68 and 69<br /> 
 :heavy_check_mark:-fix<br />
@@ -11,6 +12,7 @@ terdapat variable score yang sesuai,<br />
 jadi untuk mengatasinya mengubah variabel "_score" pada line 69 dan 69 serta menambahkan ".toString()" pada variabel "score" di line 69<br />
 
 . fixbug/cowndowntex_not_set<br />
+prioritas = Low \
 :interrobang:-bug<br />
   NullReferenceException: Object reference not set to an instance of an object
 CountdownText+d__6.MoveNext () (at Assets/scripts/CountdownText.cs:31)
@@ -31,7 +33,7 @@ arah pergerakan plane ketika diklik Vector2.down, jadi plane tidak bergerak keat
   ubah Vector2.down ke vectore2.up di TapController.cs(66,32) agar pergerakan plane ke atas jika diklik
 
 . fixbug/DeadZone_bug
-
+prioritas = Low \
 :interrobang:-bug <br />
   \ndeadzone tidak terdeteksi olaeh plane<br />
 :heavy_check_mark:-fix<br />
