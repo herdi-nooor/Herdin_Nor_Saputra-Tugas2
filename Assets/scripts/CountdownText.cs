@@ -25,10 +25,9 @@ public class CountdownText : MonoBehaviour {
 		for (int i = 0; i < count; i++) {
 			countdown.text = (count - i).ToString();
 			yield return new WaitForSeconds (1);
-		
-		
+	
 		}
 	
-		OnCountdownFinished ();
+		OnCountdownFinished();
 	}
 }
