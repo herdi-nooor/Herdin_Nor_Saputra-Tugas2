@@ -17,10 +17,7 @@ public class TapController : MonoBehaviour {
 	public AudioSource tapAudio;
 	public AudioSource scoreAudio;
 	public AudioSource dieAudio;
-
-
-
-	Rigidbody2D rigidbody;
+    new Rigidbody2D rigidbody;
 	Quaternion downrotation;
 	Quaternion forwardrotation;
 
@@ -28,7 +25,7 @@ public class TapController : MonoBehaviour {
 
 
 	void Start(){
-		rigidbody = GetComponent<Rigidbody2D> ();
+		rigidbody = GetComponent<Rigidbody2D>();
 		downrotation = Quaternion.Euler (0, 0, -90);
 		forwardrotation = Quaternion.Euler (0, 0, 35);
 		game = GameManager.Instance;
@@ -66,7 +63,7 @@ public class TapController : MonoBehaviour {
 			tapAudio.Play ();
 			transform.rotation = forwardrotation;
 			rigidbody.velocity = Vector3.zero;
-			rigidbody.AddForce (Vector2.down * tapForce, ForceMode2D.Force);
+			rigidbody.AddForce (Vector2.up * tapForce, ForceMode2D.Force);
 
 			}
 
