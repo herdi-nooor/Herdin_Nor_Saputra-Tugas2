@@ -35,7 +35,7 @@ arah pergerakan plane ketika diklik Vector2.down, jadi plane tidak bergerak keat
 . fixbug/DeadZone_bug\
 prioritas = Low \
 :interrobang:-bug <br />
-  \ndeadzone tidak terdeteksi olaeh plane<br />
+  deadzone tidak terdeteksi olaeh plane<br />
 :heavy_check_mark:-fix<br />
   plane tidak mendeteksi Wood, sehingga plane dapat melewati Woods tanpa Gameover,
 maslah terdapat di method yang mendeteksi collider di sript TapController.cd(83,29),
