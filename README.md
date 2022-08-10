@@ -32,7 +32,7 @@ arah pergerakan plane ketika diklik Vector2.down, jadi plane tidak bergerak keat
 :heavy_check_mark:-fix<br />
   ubah Vector2.down ke vectore2.up di TapController.cs(66,32) agar pergerakan plane ke atas jika diklik
 
-. fixbug/DeadZone_bug
+. fixbug/DeadZone_bug\
 prioritas = Low \
 :interrobang:-bug <br />
   \ndeadzone tidak terdeteksi olaeh plane<br />
