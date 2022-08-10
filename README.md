@@ -23,9 +23,18 @@ OnCountdownFinished tidak pernah diinisialisasi di CountDownText.cs dalam method
 :heavy_check_mark:-fix
   ubah " !gameOver " di GamaManager.cs(28,38) menjadi " gameOver "
 
--bug
+:interrobang:-bug
   plane tetap jatuh ketika di klik,
 memeriksa fungsi yang menggerakan plane,
 arah pergerakan plane ketika diklik Vector2.down, jadi plane tidak bergerak keatas.
 :heavy_check_mark:-fix
   ubah Vector2.down ke vectore2.up di TapController.cs(66,32) agar pergerakan plane ke atas jika diklik
+
+. fixbug/DeadZone_bug
+:interrobang:-bug 
+  \ndeadzone tidak terdeteksi olaeh plane
+:heavy_check_mark:-fix
+  \nplane tidak mendeteksi Wood, sehingga plane dapat melewati Woods tanpa Gameover,
+maslah terdapat di method yang mendeteksi collider di sript TapController.cd(83,29),
+cara mengatasinya dengan mengubah string yang ada di TapController.cd(ln83,ch29) dari "DeadZones" menjadi "DeadZone"
+  \nsetelah mengubah script, tambahkan tag DeadZone ke object Woods
